@@ -112,6 +112,7 @@ button {
 /* section update news */
 .update-news {
   height: 100vh;
+  margin-top: 20px;
 }
 /* view all btn */
 .view-all-btn {
@@ -141,7 +142,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 88%;
+  height: 90%;
   /* padding: 10px 0px; */
 }
 /* img */
@@ -163,6 +164,9 @@ button {
   grid-row: span 2;
   overflow: hidden;
 }
+.saw > img {
+  transform: scale(1.1);
+}
 .saw > img,
 .petal > img,
 .ringo > img {
@@ -175,7 +179,7 @@ button {
 .saw:hover > img,
 .petal:hover > img,
 .ringo:hover > img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* content in img */
@@ -245,4 +249,98 @@ button {
   font-size: 0.9em;
   color: #888; /* Date text color */
   margin-top: 5px;
+}
+/* show hero section */
+
+.show-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+}
+.heading-txt {
+  padding: 20px;
+  text-align: center;
+  font-family: "Bayon", serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: white;
+}
+.heading-txt > h3 {
+  font-size: 3rem;
+}
+.heading-txt > p {
+  margin-top: -10px;
+}
+.heading-txt > button {
+  padding: 5px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: "Bayon", serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+/* hero detail */
+.showcase {
+  width: 66%;
+  margin: auto;
+  position: relative;
+}
+/* Vainglory Hero Container */
+.vainglory-hero-container {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-y: hidden;
+  overflow-x: auto;
+  gap: 50px;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: flex-start;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+}
+
+/* Hero Card */
+.hero {
+  width: 300px;
+  height: 480px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Skaarf Image */
+.skaarf > img {
+  width: 100%;
+}
+/* arrow */
+.arrow-click {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 250px;
+}
+.left-arrow,
+.right-arrow {
+  cursor: pointer;
+}
+.left-arrow {
+  position: absolute;
+  right: 85px;
+}
+.right-arrow {
+  position: absolute;
+  left: 1070px;
 }
