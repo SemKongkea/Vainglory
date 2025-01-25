@@ -112,7 +112,6 @@ button {
 /* section update news */
 .update-news {
   height: 100vh;
-  margin-top: 20px;
 }
 /* view all btn */
 .view-all-btn {
@@ -250,6 +249,7 @@ button {
   color: #888; /* Date text color */
   margin-top: 5px;
 }
+
 /* show hero section */
 
 .show-hero {
