@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(29, 29, 29);
 }
@@ -15,6 +18,7 @@ a {
 button {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .hero-section {
   background-image: url("./img/hero-section.png");
@@ -402,4 +406,137 @@ button {
 .right-arrow {
   position: absolute;
   left: 1070px;
+}
+/* last section */
+.last-section {
+  height: 100vh;
+  margin-top: 10px;
+}
+.last-section-background {
+  height: 70vh;
+  background-image: url("./img/last-section-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.last-section-background > h2,
+.last-section-background > p,
+.last-section-background > button {
+  position: absolute;
+  color: white;
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+  filter: drop-shadow(0 0 5px black);
+}
+.last-section-background > h2 {
+  font-size: 2.5rem;
+  top: 100px;
+}
+.last-section-background > p {
+  font-size: 1.2rem;
+  top: 180px;
+}
+.last-section-background > button {
+  font-size: 1rem;
+  border: 2px solid white;
+  padding: 10px 20px;
+  background-color: transparent;
+  top: 280px;
+}
+/* last section grid */
+
+.last-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.last-section-grid > .guide,
+.last-section-grid > .answer,
+.last-section-grid > .help {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.guide,
+.answer {
+  border-right: 2px solid white;
+}
+.guide > h2,
+.answer > h2,
+.help > h2 {
+  font-size: 1.5rem;
+}
+.guide > button,
+.answer > button,
+.help > button {
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+/* footer */
+.footer {
+  margin-top: 50px;
+  height: 15vh;
+  background-color: rgb(48, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-logo,
+.footer-txt-container,
+.goto-top {
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.footer-logo {
+  width: 100px;
+}
+.footer-logo > img {
+  width: 100%;
+  margin-top: 10px;
+}
+.footer-txt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-txt {
+  margin-top: 30px;
+}
+.footer-link {
+  display: flex;
+  gap: 20px;
+}
+.footer-link > a {
+  color: white;
+}
+.goto-top > a {
+  color: dodgerblue;
+}
+.footer-link > a:nth-child(1) {
+  color: orange;
 }
