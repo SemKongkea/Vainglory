@@ -540,3 +540,51 @@ button {
 .footer-link > a:nth-child(1) {
   color: orange;
 }
+/* responsive */
+@media (max-width: 767px) {
+  /* hero section */
+  .header {
+    padding: 15px 30px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hero-section-txt {
+    margin-left: 50px;
+  }
+  /* section 2 */
+  .img-and-news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .saw {
+    display: none;
+  }
+  /* section 3 */
+  .showcase {
+    width: 42%;
+  }
+  .right-arrow {
+    left: 380px;
+  }
+  /* section 4 */
+  .last-section-background > p {
+    font-size: 13px;
+  }
+  /* footer */
+  .footer {
+    padding: 10px 30px;
+    margin-top: 100px;
+  }
+  .footer-txt {
+    margin-top: 45px;
+  }
+  .footer-txt > p {
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 80px;
+  }
+}
+@media (max-width: 425px) {
+}
