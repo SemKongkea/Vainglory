@@ -1,3 +1,22 @@
+// show menu
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".icon .fa-bars");
+  const closeIcon = document.querySelector(".icon .fa-xmark");
+  const menuList = document.querySelector(".icon-list");
+
+  menuIcon.addEventListener("click", function () {
+    menuList.style.display = "flex";
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "inline";
+  });
+
+  closeIcon.addEventListener("click", function () {
+    menuList.style.display = "none";
+    menuIcon.style.display = "inline";
+    closeIcon.style.display = "none";
+  });
+});
+
 // Select necessary elements
 const heroContainer = document.querySelector(".vainglory-hero-container");
 const leftArrow = document.querySelector(".left-arrow");
