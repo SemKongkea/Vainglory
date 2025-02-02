@@ -22,8 +22,7 @@ const heroContainer = document.querySelector(".vainglory-hero-container");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 
-// Amount to scroll on each click
-const scrollAmount = 300; // Adjust as needed
+const scrollAmount = 300;
 
 // Event listener for left arrow
 leftArrow.addEventListener("click", () => {
@@ -49,21 +48,3 @@ rightArrow.addEventListener("click", () => {
     });
   }
 });
-
-// change back to top ----to---- TOP
-const backToTopLink = document.querySelector(".goto-top a");
-
-// Function to update the text based on screen size
-function updateBackToTopText() {
-  if (window.innerWidth <= 767) {
-    backToTopLink.textContent = "Top"; // Change text for small screens
-  } else {
-    backToTopLink.textContent = "BACK-TO-TOP"; // Default text for larger screens
-  }
-}
-
-// Run the function on page load
-updateBackToTopText();
-
-// Update text dynamically when the window is resized
-window.addEventListener("resize", updateBackToTopText);

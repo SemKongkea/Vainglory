@@ -110,6 +110,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid white;
 }
 
 .icon-list > li > a {
@@ -125,7 +126,7 @@ button {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: transform 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease;
 }
 
 .icon-list > li:hover > a {
@@ -288,8 +289,8 @@ button {
 }
 
 .news-list > li {
-  padding: 18px 20px;
-  border-bottom: 1px solid #333; /* Divider between items */
+  padding: 20px;
+  border-bottom: 1px solid #333;
   display: flex;
   flex-direction: column;
 }
