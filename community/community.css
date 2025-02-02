@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(29, 29, 29);
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+button {
+  border: none;
+  outline: none;
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 1.2rem;
+}
+/* header */
+header {
+  background-image: url("./img/bg-community.jpg");
+  /* padding: 40px; */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.6rem;
+}
+.nav-link {
+  transition: transform 0.6s ease;
+}
+.nav-link > a {
+  color: white;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+}
+.nav-link:hover > a {
+  color: orange;
+}
+.logo {
+  width: 100px;
+}
+.logo > img {
+  width: 100%;
+}
+/* download button */
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.btn > button {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+.header-icon {
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+.heading-txt {
+  color: white;
+  letter-spacing: 2px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading-txt > h1 {
+  font-size: 4rem;
+}
+.heading-txt > button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 50px;
+}
+/* nav bar two */
+.nav-bar-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 40px;
+  background-color: rgba(119, 114, 114, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-list-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 15px;
+}
+.nav-link-two {
+  transition: transform 0.6s ease;
+}
+.nav-link-two > a {
+  color: white;
+}
+.nav-link-two:hover {
+  transform: scale(1.1);
+}
+.nav-link-two:hover > a {
+  color: orange;
+}
+/* twitch main */
+.twitch {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 40px;
+  gap: 20px;
+}
+.twitch-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(80, 77, 77);
+  color: white;
+  height: 300px;
+  letter-spacing: 1px;
+}
+.twitch-txt > a {
+  color: orange;
+}
+/* live twitch */
+.twitch-live-one,
+.twitch-live-two,
+.twitch-live-three {
+  background-color: rgb(61, 60, 60);
+  border-top: 5px solid purple;
+  position: relative;
+}
+.twitch-live-two {
+  grid-column: 3 / 5;
+  grid-row: span 2;
+}
+.twitch-live-three {
+  grid-column: span 2;
+}
+.live-and-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.live-and-logo > img {
+  width: 50px;
+}
+.video-icon {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  top: 45%;
+  left: 44%;
+}
+.video-icon > img {
+  width: 100%;
+}
+/* youtube */
+.youtube {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 40px;
+  gap: 20px;
+  height: 100vh;
+}
+.youtube-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(80, 77, 77);
+  color: white;
+  letter-spacing: 1px;
+}
+.youtube-txt > a {
+  color: orange;
+}
+.youtube-video {
+  background-color: rgb(61, 60, 60);
+  padding: 10px 20px;
+  position: relative;
+  border-top: 3px solid red;
+}
+.youtube-video:nth-child(2) {
+  grid-column: span 2;
+}
+.youtube-white {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.youtube-icon {
+  width: 50px;
+  position: absolute;
+  top: 43%;
+  left: 46%;
+}
+.youtube-icon > img {
+  width: 100%;
+}
+/* vainglory fire */
+.vainglory-fire {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(49, 48, 48);
+  margin: 40px;
+  padding: 2px;
+  gap: 10px;
+}
+.info {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.txt {
+  color: white;
+}
+.txt > a {
+  color: orange;
+}
+.vainglory-fire-box {
+  background-image: url("./img/1000x500_Silvernail.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  border-top: 5px solid orange;
+  cursor: pointer;
+}
+.box-two {
+  background-image: url("./img/CelesteSplash.png");
+}
+.box-three {
+  background-image: url("./img/Reim_Splash.png");
+}
+.box-four {
+  background-image: url("./img/Skye_Feature.png");
+}
+.brand-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.brand-icon > img {
+  width: 10px;
+}
+.txt-box {
+  color: white;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.txt-box > h4 {
+  color: orange;
+}
+.txt-box > .handle {
+  color: rgb(161, 157, 157);
+}
+.vainglory-fire-box:hover > .txt-box > h1 {
+  color: orange;
+}
+/* button hover */
+button {
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
