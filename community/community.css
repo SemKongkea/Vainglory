@@ -86,6 +86,55 @@ header {
   color: white;
   cursor: pointer;
 }
+.icon {
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-list {
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  z-index: 999;
+}
+
+.icon-list li {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.icon-list li:last-child {
+  border-bottom: none;
+}
+
+.icon-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icon-list li:hover a {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: dodgerblue;
+}
 .heading-txt {
   color: white;
   letter-spacing: 2px;
@@ -133,6 +182,10 @@ header {
 }
 .nav-link-two:hover > a {
   color: orange;
+}
+/* media section */
+.grid-container {
+  margin-bottom: 30px;
 }
 /* twitch main */
 .twitch {
@@ -300,6 +353,141 @@ header {
   color: rgb(161, 157, 157);
 }
 .vainglory-fire-box:hover > .txt-box > h1 {
+  color: orange;
+}
+
+/* last section */
+
+.last-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 100px 40px;
+}
+.guide,
+.answer,
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.guide,
+.answer {
+  border-right: 1px solid gray;
+}
+.guide > button,
+.answer > button,
+.help > button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+}
+/* footer */
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  height: 15vh;
+  background-color: rgb(48, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-logo,
+.footer-txt-container,
+.goto-top {
+  font-family: "Bayon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.footer-logo {
+  width: 100px;
+}
+.footer-logo > img {
+  width: 100%;
+  margin-top: 10px;
+}
+.footer-txt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-txt {
+  margin-top: 30px;
+  .icon {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .icon-list {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .icon-list > li {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .icon-list > li > a {
+    font-family: "Bayon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-list > li:hover > a {
+    color: dodgerblue;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.footer-link {
+  display: flex;
+  gap: 20px;
+}
+.footer-link > a {
+  color: white;
+}
+.goto-top > a {
+  color: dodgerblue;
+}
+.footer-link > a:nth-child(1) {
   color: orange;
 }
 /* button hover */

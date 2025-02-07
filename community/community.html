@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <article class="header">
         <nav class="nav-bar">
           <div class="logo">
@@ -19,17 +19,27 @@
           </div>
           <ul class="nav-list">
             <li class="nav-link"><a href="../index.html">GAME</a></li>
-            <li class="nav-link"><a href="#">NEWS</a></li>
             <li class="nav-link"><a href="./community.html">COMMUNITY</a></li>
-            <li class="nav-link"><a href="#">SUPPORT</a></li>
+            <li class="nav-link">
+              <a href="../support/support.html">SUPPORT</a>
+            </li>
           </ul>
         </nav>
         <div class="download-btn">
           <div class="btn">
             <button>DOWNLOAD FOR FREE</button>
           </div>
-          <div class="header-icon">
+          <div class="icon">
             <i class="fa-solid fa-bars"></i>
+            <i
+              class="fa-solid fa-xmark"
+              id="close-icon"
+              style="display: none"
+            ></i>
+            <ul class="icon-list">
+              <li><a href="">LOG IN</a></li>
+              <li><a href="">SIGN IN</a></li>
+            </ul>
           </div>
         </div>
       </article>
@@ -49,7 +59,7 @@
         </ul>
       </nav>
       <!-- main section -->
-      <article class="grid-container">
+      <section class="grid-container">
         <main class="twitch" id="twitch">
           <!-- text -->
           <div class="twitch-txt">
@@ -227,7 +237,60 @@
             </div>
           </div>
         </main>
-      </article>
+      </section>
+      <!-- last section -->
+      <section class="last-section">
+        <div class="guide">
+          <h2>VAINGLORY GUIDE</h2>
+          <p>
+            Ex diam dicit vivendo sea, impetus evertitur no mea. Eu has solum
+            audire.
+          </p>
+          <button>VISIT THE ACADEMY</button>
+        </div>
+        <div class="answer">
+          <h2>FIND ANSWERS</h2>
+          <p>
+            Ex diam dicit vivendo sea, impetus evertitur no mea. Eu has solum
+            audire.
+          </p>
+          <button>VIEW OUR FAQ</button>
+        </div>
+        <div class="help">
+          <h2>GET HELP</h2>
+          <p>
+            Ex diam dicit vivendo sea, impetus evertitur no mea. Eu has solum
+            audire.
+          </p>
+          <button>OPEN A TICKET</button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-logo">
+          <img src="../img/vainglory logo.png" alt="footer-logo" />
+        </div>
+        <div class="footer-txt-container">
+          <!-- txt -->
+          <div class="footer-txt">
+            <p>
+              &copy; 2015 Super Evil Megacorp. All rights served. Apple and the
+              Apple logo are Trademarks of Apple Inc.Registered in the U.S and
+              the other countries. App Store is a Service marks of Apple Inc.
+            </p>
+          </div>
+          <!-- link -->
+          <div class="footer-link">
+            <a href="">PRIVACY POLICY</a> |
+            <a href="">TERMS OF USE</a>
+          </div>
+        </div>
+        <div class="goto-top">
+          <a href="#top">BACK-TO-TOP</a>
+        </div>
+      </footer>
     </main>
+    <script src="../main.js"></script>
   </body>
 </html>

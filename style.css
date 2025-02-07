@@ -57,12 +57,16 @@ button {
   font-family: "Bayon", serif;
   font-weight: 400;
   font-style: normal;
+  filter: drop-shadow(0 0 2px black);
 }
 .nav-link {
   transition: transform 0.6s ease;
 }
 .nav-link:hover {
   transform: scale(1.2);
+}
+.nav-link:hover > a {
+  color: orange;
 }
 
 .icon-container {
@@ -90,48 +94,48 @@ button {
 
 .icon-list {
   width: 150px;
-  height: 200px;
   position: absolute;
   right: 0;
-  top: 50px;
-  background-color: gray;
-  display: flex;
+  top: 70px;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  display: none;
-}
-
-.icon-list > li {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid white;
-}
-
-.icon-list > li > a {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  z-index: 999;
   font-family: "Bayon", serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
-  letter-spacing: 1px;
-  font-size: 2rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: transform 0.3s ease;
 }
 
-.icon-list > li:hover > a {
-  color: dodgerblue;
+.icon-list li {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.icon-list li:last-child {
+  border-bottom: none;
+}
+
+.icon-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icon-list li:hover a {
   background-color: rgba(0, 0, 0, 0.3);
+  color: dodgerblue;
 }
 
 .hero-section-txt {
