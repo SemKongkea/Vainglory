@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Angkor&family=Bayon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <a href="../index.html"><i class="fa-solid fa-xmark"></i></a>
+        <h2>Log In</h2>
+        <div class="already">
+          Already have an account?
+          <span class="login-link"
+            ><a href="../sign in/signin.html">sign in</a></span
+          >
+        </div>
+        <div class="login-icon">
+          <button class="facebook">
+            <div class="txt">Facebook</div>
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+          </button>
+          <button class="google">
+            <div class="txt">Google</div>
+            <div class="icon"><i class="fa-brands fa-google"></i></div>
+          </button>
+        </div>
+        <p class="or">OR</p>
+        <form class="input">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+        </form>
+        <div class="submit">
+          <button class="forget">Forget Password?</button>
+          <button type="submit" class="goto-login">Log In</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector(".goto-login")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.location.href = "../index.html";
+        });
+    </script>
+  </body>
+</html>

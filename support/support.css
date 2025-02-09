@@ -38,6 +38,9 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.nav-bar {
+  gap: 50px;
+}
 .link-page {
   padding: 20px;
 }
