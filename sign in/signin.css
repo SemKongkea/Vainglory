@@ -79,6 +79,7 @@ button {
 }
 .or {
   text-align: center;
+  margin-bottom: 20px;
 }
 .input {
   display: flex;
@@ -96,11 +97,8 @@ input {
   cursor: pointer;
 }
 .submit {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
   margin-bottom: 30px;
-  padding: 0 30px;
+  padding: 0 25px;
 }
 .forget,
 .goto-login {
@@ -118,6 +116,7 @@ input {
 .goto-login {
   background-color: rgb(0, 128, 0);
   color: white;
+  width: 360px;
 }
 .goto-login > a {
   text-decoration: none;
